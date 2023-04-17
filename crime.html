@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Classificação de Crime</title>
+    <script src="crime.js"></script>
+  </head>
+  <body>
+    <h1>Responda as seguintes perguntas:</h1>
+    <form id="crimeForm">
+      <p>Telefonou para a vítima?</p>
+      <input id="telefonou" type="checkbox" name="telefonou" value="sim">Sim<br>
+      <input type="checkbox" name="telefonou" value="nao">Não<br>
+      <p>Esteve no local do crime?</p>
+      <input id="local" type="checkbox" name="local" value="sim">Sim<br>
+      <input type="checkbox" name="local" value="nao">Não<br>
+      <p>Mora perto da vítima?</p>
+      <input id="mora_perto" type="checkbox" name="mora_perto" value="sim">Sim<br>
+      <input type="checkbox" name="mora_perto" value="nao">Não<br>
+      <p>Devia para a vítima?</p>
+      <input id="devia" type="checkbox" name="devia" value="sim">Sim<br>
+      <input type="checkbox" name="devia" value="nao">Não<br>
+      <p>Já trabalhou com a vítima?</p>
+      <input id="trabalhou" type="checkbox" name="trabalhou" value="sim">Sim<br>
+      <input type="checkbox" name="trabalhou" value="nao">Não<br>
+      <br>
+      <input type="button" value="Classificar" onclick="classificar()">
+    </form>
+    <div id="resultado"></div>
+  </body>
+</html>
